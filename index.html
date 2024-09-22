@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            images = new Array;//Array of images
+            images[0] = "assets/images/image-1.png";
+            images[1] = "assets/images/image-2.png";
+            images[2] = "assets/images/image-3.png";
+            images[3] = "assets/images/image-4.jpg";
+            images[4] = "assets/images/image-1.png";
+            images[5] = "assets/images/image-2.png";
+            images[6] = "assets/images/image-3.png";
+            images[7] = "assets/images/image-4.jpg";
+            images[8] = "assets/images/image-2.png";
+            images[9] = "assets/images/image-3.png";
+            images[10] = "assets/images/image-4.jpg";
+            images[11] = "assets/images/image-3.png";
+            images[12] = "assets/images/image-4.jpg";
+            images[13] = "assets/images/image-1.png";
+            images[14] = "assets/images/image-2.png";
+            images[15] = "assets/images/image-3.png";
+            images[16] = "assets/images/image-4.jpg";
+            images[17] = "assets/images/image-1.png";
+            images[18] = "assets/images/image-2.png";
+            images[19] = "assets/images/image-3.png";
+            images[20] = "assets/images/image-4.jpg";
+            images[21] = "assets/images/image-2.png";
+            images[22] = "assets/images/image-3.png";
+            images[23] = "assets/images/image-4.jpg";
+            ;
+            
+            setInterval( function() //Time changes images after 2000 
+            {
+                changeImage()
+            }, 2000);
+
+            x = 0;
+
+            function changeImage()//changes images
+           {
+                document.getElementById('ad').src = images[x];
+
+                if ( x < 8 ) {
+                    x += 1;
+                } else if ( x = 9 ) {
+                    x = 0;
+                }
+            }
+        </script>
+
+        <img id='ad' src="assets/images/image-3.png">
+    </body>
+</html>
