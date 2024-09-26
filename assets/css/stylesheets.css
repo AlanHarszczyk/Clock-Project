@@ -1,7 +1,18 @@
 #ad
 {
+  position: absolute;
+  top:10%;
+  left:28.1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+#intro
+{
+  position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
